@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> 
+    Cadastro de Compra do Livro
+</title> 
+<meta charset="utf-8">
+</head> 
+<body style="background-image: url(preda.gif);"> 
+    <div style="text-align: center; padding-top: 15%;">
+<form name="formCadastro" onsubmit="return validarFormulario()" method="post">
+    <div style="text-align: center; padding-top: 1%; background-color: #ffffff41; margin-left: 15%; margin-right: 15%;">
+    <label for="nome">Informe o seu Nome:</label>
+    <input type="text" name="nome">
+    <input type="submit" value="Enviar">
+    </div>
+    <div style="text-align: center; padding-top: 1%; background-color: #ffffff41; padding-bottom: 1%; margin-left: 15%; margin-right: 15%">
+    <label for="nome">Informe o seu CPF:</label>
+    <input type="text" name="nome">
+    <input type="submit" value="Enviar">
+    </div>
+</form>
+    </div>
+
+<p style="text-align: center; background-color: #ffffff41; margin-left: 15%; margin-right: 15%;">Ao finalizar o cadastro você deve pagar a quantia de 17.545,99 para concluir o cadastro</p>
+<script>
+    function validarFormulario(){
+        var nomePessoa = document.forms["formCadastro"]["nome"].value;
+        if (nomePessoa == "") {
+            alert("CPF inválido!");
+            return false;     
+        }
+        else{
+            alert("Olá, " + nomePessoa + " !");
+            return true;
+        }
+    }
+</script>
+</body> 
+</html> 

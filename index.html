@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pague!</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <header>
+        <h1>Mercado Livre Freemium</h1>
+        <nav>
+            </nav>
+    </header>
+
+    <main>
+        <section id="produto">
+            <div>
+            <img src="Spinning_book_abd64d.gif" alt="Imagem do produto" width="320" height="210">
+            </div>
+            <h2 class="titulo-produto">Livro</h2>
+            <p>Livro legal e bonito.</p>
+            <div class="preco">De <s>R$ 90.867,99</s> por <u>R$ 117.876,85</u></div>
+
+            <div>
+            <button onclick="window.open('cadastro.html');">Comprar agora!</button>
+            <button id="adicionar-ao-carrinho" onclick="botaoAdicionar">Adicionar na lista de desejos</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        </footer>
+
+    <script>
+
+const botaoAdicionar = document.getElementById('adicionar-ao-carrinho');
+
+botaoAdicionar.addEventListener('click', function() {
+ // alert('Produto adicionado a lista de desejos!');
+ confirm("Deseja mesmo adicionar o \nproduto a sua lista de desejos? \n \nSerá cobrado o valor de R$88,99 para concluir essa operação");
+});
+
+
+
+    </script> </body>
+</html>
